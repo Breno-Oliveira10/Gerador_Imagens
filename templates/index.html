@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Imagens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerador de Imagens</h1>
+
+        <div id="prompt-container">
+            <div class="prompt-input">
+                <div class="prompt-label">Prompt 1</div>
+                <input type="text" placeholder="Digite seu prompt aqui..." class="prompt-field">
+                <span class="remove-prompt"></span>
+            </div>
+        </div>
+
+        <button id="add-prompt">Adicionar Novo Campo</button>
+        <button id="generate-images">Gerar Imagens</button>
+
+        <div id="loading" class="hidden">
+            <span class="loader"></span>
+            <div class="TextGerandoImg">Gerando imagens...</div>
+        </div>
+
+        <div id="image-container">
+            <!-- Será preenchido dinamicamente com imagens e prompts gerados -->
+        </div>
+    </div>
+
+    <div id="image-modal" class="hidden">
+        <span id="close-modal">&times;</span>
+        <img id="modal-image" src="" alt="Imagem Ampliada">
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #c7c2c28c;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.prompt-input {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 10px;
+    position: relative; 
+}
+
+.prompt-label {
+    margin-bottom: 2px; 
+    font-weight: bold; 
+}
+
+.prompt-field {
+    padding: 10px;
+    padding-right: 30px; 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px; 
+    box-sizing: border-box;
+    margin-bottom: 3px;
+}
+
+.prompt-input .remove-prompt {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    justify-content: center;
+    height: 100%;
+}
+
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00000088;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    width: 251px; 
+    height: 161px; 
+    cursor: pointer;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.prompt-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+/* Responsividade*/
+@media (max-width: 1000px) {
+    .image-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-wrapper img {
+        
+        margin: 0 0 10px 0; 
+    }
+
+    .prompt-text {
+        margin: 0 0 10px 0; 
+    }
+
+    .download-button {
+        margin: 10px 0; 
+    }
+}
+
+.download-button {
+    display: block;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.download-button:hover {
+    background-color: #555;
+}
+
+ #loading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+} 
+
+.TextGerandoImg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animação de carregamento */
+.loader {
+    width: 35px;
+    height: 35px;
+    border: 5px solid #a7a5a5;
+    border-bottom-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px; /* centraliza o spinner */
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    vertical-align: middle;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.full-screen-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.full-screen-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
