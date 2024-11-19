@@ -5,18 +5,16 @@
 Este projeto utiliza a API da plataforma Glif app, que combina o modelo de geração de imagens SD3 com o processamento de linguagem natural do GPT4 e DALL·E 3. O objetivo é facilitar a criação de imagens de forma automatizada a partir de prompts de texto. O usuário insere uma descrição textual e a aplicação gera uma imagem correspondente.
 
 ## Configuração e Execução
-
-1. **Instalar o virtualenv (se ainda não tiver instalado), necessário instalar apenas uma vez.** Na pasta que está o projeto, no terminal do VSCode, execute:
-
-    ```bash
-    pip install virtualenv
-    ```
-
-2. **Clone o repositório:**
+1. **Clone o repositório:**
 
     ```bash
     git clone https://github.com/Breno-Oliveira10/Gerador_Imagens.git
     cd Gerador_Imagens
+    ```
+2. **Instalar o virtualenv (se ainda não tiver instalado), necessário instalar apenas uma vez.** Na pasta que está o projeto, no terminal do VSCode, execute:
+
+    ```bash
+    pip install virtualenv
     ```
 
 3. **Crie e ative um ambiente virtual (opcional, mas recomendado):**
