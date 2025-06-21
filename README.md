@@ -4,6 +4,10 @@
 
 Este projeto utiliza a API da plataforma Glif app, que combina o modelo de geração de imagens SD3 com o processamento de linguagem natural do GPT4 e DALL·E 3. O objetivo é facilitar a criação de imagens de forma automatizada a partir de prompts de texto. O usuário insere uma descrição textual e a aplicação gera uma imagem correspondente.
 
+## Demostração
+
+https://github.com/user-attachments/assets/9effdff9-c3cd-41e3-9758-86bf4ceac793
+
 ## Configuração e Execução
 1. **Clone o repositório:**
 
